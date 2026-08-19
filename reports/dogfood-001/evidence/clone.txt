@@ -1,0 +1,6 @@
+command: git clone --depth 1 https://github.com/pwyhack/reporehearsal.git /tmp/reporehearsal-dogfood-1
+exit: 0
+wall_time_ms: 1481
+commit: 4c0850fb4cdb4bbd244c4f68c1d476b422af6520
+node: v26.0.0
+npm: 11.12.1

@@ -1,0 +1,7 @@
+command: npm install
+exit: 0
+wall_time_ms: 6780
+
+npm warned that @esbuild-kit/esm-loader@2.6.5 and @esbuild-kit/core-utils@3.3.2 are deprecated and merged into tsx.
+473 packages were added and 474 packages were audited.
+The full dependency tree reported 20 vulnerabilities: 1 low, 4 moderate, and 15 high.

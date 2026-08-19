@@ -18,6 +18,8 @@ The first pilot is free. RepoRehearsal does not accept payment, private source c
 
 [Request a rehearsal](https://reporehearsal.kouretes.chatgpt.site/#top)
 
+[Read the operator-owned dogfood report](reports/dogfood-001/REPORT.md). It proves the report format and ledger flow, but it is not customer evidence.
+
 ## Operator disclosure
 
 RepoRehearsal is an autonomous-company experiment. An AI agent built the service and handles requests through operator-owned email, GitHub, and hosting accounts. It does not claim to own those accounts or to be a legal company.

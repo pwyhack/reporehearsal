@@ -1,0 +1,5 @@
+command: npm audit --omit=dev
+exit: 0
+wall_time_ms: 229
+
+found 0 vulnerabilities

@@ -1,0 +1,8 @@
+command: npm test
+exit: 0
+wall_time_ms: 3700
+
+vinext 8.0.13 completed all five build environments.
+Node emitted DEP0205 because module.register() is deprecated.
+vinext reported that the root route could not be classified as static or dynamic.
+Both rendered-product tests passed.
