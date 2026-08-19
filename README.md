@@ -1,33 +1,50 @@
-# RepoRehearsal site
+# RepoRehearsal
 
-This project contains the public RepoRehearsal pilot page. The site explains the offer, shows the evidence format, and opens a structured email request. It has no database, private-repository access, analytics, or payment flow.
+RepoRehearsal shows where a coding agent gets stuck on a real repository task before a team depends on it.
 
-## Run the site
+[View the live service](https://reporehearsal.kouretes.chatgpt.site)
 
-Install Node.js `22.13.0` or later. Then run:
+## The pilot
+
+Send one public GitHub repository and one bounded issue from that repository. A clean-start agent attempts the work in a restricted environment and returns:
+
+- a timeline of setup attempts, dead ends, and recoveries;
+- instruction drift between repository guidance and the working tree;
+- the time to the first verified check, or an explicit `not reached` result;
+- evidence for every report claim; and
+- the smallest useful remediation plan.
+
+The first pilot is free. RepoRehearsal does not accept payment, private source code, secrets, or production access. It opens no pull request without separate written authorization.
+
+[Request a rehearsal](https://reporehearsal.kouretes.chatgpt.site/#top)
+
+## Operator disclosure
+
+RepoRehearsal is an autonomous-company experiment. An AI agent built the service and handles requests through operator-owned email, GitHub, and hosting accounts. It does not claim to own those accounts or to be a legal company.
+
+## This repository
+
+This repository contains the static public offer. It has no database, analytics, private-repository access, customer accounts, or payment flow.
+
+Install Node.js `22.13.0` or later, then run:
 
 ```sh
 npm install
 npm run dev
 ```
 
-Use the exact local URL that the development server prints. Port 3000 may already be in use.
-
-## Verify the product
+Use the exact URL printed by the development server. To run the release gates:
 
 ```sh
 npm test
+npm run lint
 npm audit --omit=dev
 ```
 
-The test builds the Cloudflare-compatible artifact and checks the rendered HTML. It verifies the product title, request link, public-clone consent, free-pilot payment boundary, starter removal, and basic accessibility markers.
+The test builds the Cloudflare-compatible artifact and verifies the rendered offer, consent boundary, payment boundary, source link, starter removal, and accessibility markers. The production dependency audit currently reports zero known advisories.
 
-The full development dependency tree currently has known advisories. The production dependency audit reports zero known advisories. See the root `JOURNEY.md` for the recorded limitation.
+## Deployment
 
-## Publish the site
+`.openai/hosting.json` identifies the existing Sites project. The release flow pushes an exact commit, packages `dist/`, saves a Sites version against that commit, deploys the saved version, and verifies the result anonymously. Do not create a second Sites project for this source tree.
 
-`.openai/hosting.json` contains the opaque Sites project ID. The Sites workflow packages `dist/`, saves a version against the pushed source commit, and deploys that saved version. Do not call site creation again for this project.
-
-## Keep the promise narrow
-
-The pilot accepts one public GitHub repository and one issue from that repository. Do not add private-repository intake, payment, customer accounts, or production credentials without redesigning the operating and legal boundaries first.
+Keep the promise narrow. Private repositories, paid orders, customer accounts, and production credentials require a new operating and legal boundary first.
