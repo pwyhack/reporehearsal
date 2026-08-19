@@ -39,6 +39,7 @@ test("server-renders the RepoRehearsal offer and honest intake boundary", async 
   assert.match(html, /both links are public and may be cloned/);
   assert.match(html, /Illustrative report data/);
   assert.match(html, /mailto:[^"']+RepoRehearsal%20request/i);
+  assert.match(html, /href="https:\/\/github\.com\/pwyhack\/reporehearsal"/i);
   assert.doesNotMatch(html, previewMeta);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/);
 });

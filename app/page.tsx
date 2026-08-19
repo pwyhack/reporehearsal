@@ -127,7 +127,7 @@ export default function Home() {
           <h2 id="sample-title">The clock does not stop when the agent gets confused.</h2>
           <p>
             A rehearsal pins the repository and verification command before the
-            run. If the check never passes, the report says "not reached."
+            run. If the check never passes, the report says &quot;not reached.&quot;
           </p>
         </div>
         <div className="timeline">
@@ -155,7 +155,7 @@ export default function Home() {
         <ol>
           <li><span>1</span><div><h3>Scope</h3><p>You send a public repo, a bounded issue, and the check that decides whether the task worked.</p></div></li>
           <li><span>2</span><div><h3>Rehearse</h3><p>The agent starts from a pinned commit in a restricted, clean environment with no private credentials.</p></div></li>
-          <li><span>3</span><div><h3>Verify</h3><p>The declared command runs against the attempt. An agent saying "done" is not evidence.</p></div></li>
+          <li><span>3</span><div><h3>Verify</h3><p>The declared command runs against the attempt. An agent saying &quot;done&quot; is not evidence.</p></div></li>
           <li><span>4</span><div><h3>Deliver</h3><p>You receive the timeline, evidence manifest, findings, and the shortest remediation plan.</p></div></li>
         </ol>
       </section>
@@ -198,6 +198,7 @@ export default function Home() {
           RepoRehearsal
         </a>
         <p>Cold-start evidence for coding-agent repositories.</p>
+        <a href="https://github.com/pwyhack/reporehearsal">View the source</a>
         <a href={requestHref}>Request the free pilot</a>
       </footer>
     </main>
