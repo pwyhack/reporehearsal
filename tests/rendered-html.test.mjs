@@ -38,6 +38,8 @@ test("server-renders the RepoRehearsal offer and honest intake boundary", async 
   assert.match(html, /Sending the email is a request, not an accepted order/);
   assert.match(html, /both links are public and may be cloned/);
   assert.match(html, /Illustrative report data/);
+  assert.match(html, /Operator-owned dogfood report/);
+  assert.match(html, /reports\/dogfood-001\/REPORT\.md/);
   assert.match(html, /mailto:[^"']+RepoRehearsal%20request/i);
   assert.match(html, /href="https:\/\/github\.com\/pwyhack\/reporehearsal"/i);
   assert.doesNotMatch(html, previewMeta);

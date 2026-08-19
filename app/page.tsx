@@ -129,6 +129,12 @@ export default function Home() {
             A rehearsal pins the repository and verification command before the
             run. If the check never passes, the report says &quot;not reached.&quot;
           </p>
+          <a
+            className="report-link"
+            href="https://github.com/pwyhack/reporehearsal/blob/main/reports/dogfood-001/REPORT.md"
+          >
+            Operator-owned dogfood report ↗
+          </a>
         </div>
         <div className="timeline">
           {reportItems.map(([time, title, detail]) => (

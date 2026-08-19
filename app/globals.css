@@ -367,6 +367,16 @@ h2 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.report-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  color: #fff;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.78rem;
+  text-decoration: underline;
+  text-underline-offset: 0.35rem;
+}
+
 .timeline {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
